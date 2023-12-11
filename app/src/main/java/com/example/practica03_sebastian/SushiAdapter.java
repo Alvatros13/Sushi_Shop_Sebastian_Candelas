@@ -36,15 +36,11 @@ public class SushiAdapter extends RecyclerView.Adapter<SushiAdapter.SushiViewHol
     public void onBindViewHolder(@NonNull SushiViewHolder holder, int position) {
         SushiItem sushiItem = sushiList.get(position);
         byte[] bytes = imageList.get(position);
-        // Seteando los datos en las vistas del card
         holder.nameTextView.setText(sushiItem.getName());
         holder.priceTextView.setText(String.valueOf(sushiItem.getPrice()));
-        // Aquí debes cargar la imagen usando sushiItem.getBytes() en el ImageView correspondiente
         Bitmap bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
         holder.imageView.setImageBitmap(bitmap);
-        // Podrías agregar un clic a los elementos del card si es necesario
         holder.cardView.setOnClickListener(v -> {
-            // Lógica para manejar el clic en el card, si es necesaria
         });
     }
 

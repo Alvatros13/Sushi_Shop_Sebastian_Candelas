@@ -34,7 +34,6 @@ public class MainAdminActivity extends AppCompatActivity {
     private ImageButton logoutBtn;
     private Button btnAddSushi;
     private ArrayList<SushiItem> sushiItems;
-
     private ArrayList<byte[]> imgList;
     private SushiAdapter sushiAdapter;
 

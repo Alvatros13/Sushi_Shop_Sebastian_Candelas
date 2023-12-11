@@ -100,7 +100,6 @@ public class LoginActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 progressDialog.dismiss();
                 String userType = dataSnapshot.child("userType").getValue(String.class);
-                Toast.makeText(LoginActivity.this, String.valueOf(userRef.child(currentUserID)) , Toast.LENGTH_SHORT).show();
                 if (userType != null) {
                     if (userType.equals("user")) {
                         startActivity(new Intent(LoginActivity.this, MainUserActivity.class));

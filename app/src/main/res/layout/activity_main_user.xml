@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background2"
     tools:context=".MainUserActivity">
 
     <ImageView
@@ -18,6 +17,7 @@
         app:srcCompat="@drawable/orange_rectangle2" />
 
     <RelativeLayout
+        android:id="@+id/toolBar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize">
 
@@ -53,5 +53,14 @@
             android:background="@android:color/transparent"/>
 
     </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewCards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/row_sushi_user"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/toolBar"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
 </RelativeLayout>
