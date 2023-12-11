@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Practica03_Sebastian</string>
+    <string name="App_Name">Sushi Shop</string>
+    <string name="welcome_login">Welcome to Sushi Shop</string>
+    <string name="login">Login</string>
+    <string name="continue_without_login">Continue Without Login</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="new_user_sing">New User? <b>Sing Up</b></string>
+    <string name="name">Name</string>
+    <string name="register">Register</string>
+    <string name="new_acount">Create New Account</string>
+
+</resources>
